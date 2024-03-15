@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Diagnosis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="background">
+        <div class="container">
+            <h1>Only Solutions</h1>
+            <h2>your companion in health</h2>
+            <h3>Welcome to Only Solutions - your trusted medical diagnosis tool. Fill in the details below and get personalized advice based on your medical condition and history.</h3>
+            <form id="diagnosisForm">
+                <div class="form-group">
+                    <label for="name"><i class="fas fa-user"></i> Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="age"><i class="fas fa-birthday-cake"></i> Age:</label>
+                    <input type="number" id="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="problem"><i class="fas fa-heartbeat"></i> Problem Facing:</label>
+                    <input type="text" id="problem" required>
+                </div>
+                <div class="form-group">
+                    <label for="medicalHistory"><i class="fas fa-notes-medical"></i> Past Medical Issues:</label>
+                    <textarea id="medicalHistory"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="report"><i class="fas fa-file-medical"></i> Upload your health report:</label>
+                    <input type="file" id="report" accept=".pdf, .doc, .docx">
+                </div>
+                <button type="submit">Diagnose</button>
+            </form>
+            <div id="diagnosisResult"></div>
+            <div class="guide">
+                <p>Please fill in all the fields accurately to receive the best diagnosis. Your privacy is our priority - all
+                  information provided is confidential.</p>
+              </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
