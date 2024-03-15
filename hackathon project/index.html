@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Only Solutions - Medical Diagnosis Tool</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Only Solutions</h1>
+      <h2>Your Companion in Health</h2>
+    </div>
+    <div class="description">
+      <p>Welcome to Only Solutions - your trusted medical diagnosis tool. Fill in the details below and get personalized advice based on your medical condition and history.</p>
+    </div>
+    <div class="form-container">
+      <form id="diagnosisForm">
+        <h3>Enter Your Information</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        <label for="condition">Medical Condition:</label>
+        <input type="text" id="condition" name="condition" required>
+        <label for="pastIssues">Past Medical Issues:</label>
+        <textarea id="pastIssues" name="pastIssues" rows="4" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="guide">
+      <p>Please fill in all the fields accurately to receive the best diagnosis. Your privacy is our priority - all information provided is confidential.</p>
+    </div>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
